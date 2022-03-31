@@ -222,6 +222,10 @@
   width: 50px;
   background: none;
 }
+.desc {
+
+  margin: 18px;
+}
 .home-section{
   position: relative;
   background: #E4E9F7;
@@ -252,3 +256,19 @@
 #btn{
   cursor: pointer;
 }
+
+header {
+  padding: 15px;
+  border: solid;
+  border-color: #0e67b5;
+  background-color: #0e67b5;
+  color: white;
+}
+
+.logo {
+  border: ridge;
+  border-radius: 70px;
+}
+ h2 {
+  text-decoration: overline;
+ }
