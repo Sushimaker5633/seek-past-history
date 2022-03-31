@@ -1,21 +1,17 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
-<head>
-  <meta charset="UTF-8">
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <title> SeekPastHistory </title>
-  <link rel="stylesheet" href="style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title> SeekPastHistory </title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
 <body>
   <div class="sidebar">
     <div class="logo-details">
-      <div class="logo_name">SeekPastHistory</div>
-      <i class='bx bx-menu' id="btn">
-        <ion-icon name="menu-outline"></ion-icon>
-      </i>
+        <div class="logo_name">SeekPastHistory</div>
+        <i class='bx bx-menu' id="btn" ><ion-icon name="menu-outline"></ion-icon></i>
     </div>
     <ul class="nav-list">
       <li>
@@ -25,62 +21,61 @@
           </i>
           <span class="links_name">Home</span>
         </a>
-        <span class="tooltip">Home</span>
+         <span class="tooltip">Home</span>
       </li>
       <li>
-        <a href="/about.html">
-          <i class='bx' style="display:flex; align-items: center; justify-content: center;">
-            <ion-icon name="person-outline"></ion-icon>
-          </i>
-          <span class="links_name">About</span>
-        </a>
-        <span class="tooltip">About</span>
-      </li>
-      <li>
-        <a href="/topics.html">
-          <i class='bx' style="display:flex; align-items: center; justify-content: center;">
-            <ion-icon name="book-outline"></ion-icon>
-          </i>
-          <span class="links_name">Topics</span>
-        </a>
-        <span class="tooltip">Topics</span>
-      </li>
-
+       <a href="/about.html">
+         <i class='bx' style="display:flex; align-items: center; justify-content: center;" >
+           <ion-icon name="person-outline"></ion-icon>
+         </i>
+         <span class="links_name">About</span>
+       </a>
+       <span class="tooltip">About</span>
+     </li>
+     <li>
+       <a href="/topics.html">
+         <i class='bx' style="display:flex; align-items: center; justify-content: center;" >
+           <ion-icon name="book-outline"></ion-icon>
+         </i>
+         <span class="links_name">Topics</span>
+       </a>
+       <span class="tooltip">Topics</span>
+     </li>
     </ul>
   </div>
   <section class="home-section">
-    <header style="background: #E4E9F7; margin-bottom: 20px;">
-      <div style="display:flex; flex-direction: row; justify-content: center; align-items: center">
-        <img src="logo.png" style="width: 120px; height: 120px; margin-left: 80px; margin-top: 10px;">
-        <h2 style="margin-left: 10px">SeekPastHistory</h2>
-      </div>
-    </header>
-    <hr>
-    <div class="text">Welcom to SeekPastHistory, your gateway to the past!</div>
-    <h4 class="desc" style="margin-left: 20px;">We teach all kinds of history topics here. below are some of our topics:
-    </h4>
+      <header style="margin-bottom: 20px;">
+        <div style="display:flex; flex-direction: row; justify-content: center; align-items: center">
+          <img class="logo" src="logo.png" style = "width: 120px; height: 120px; margin-left: 80px; margin-top: 10px;">
+          <h2 style = "margin-left: 10px">        
+  SeekPastHistory</h2>
+        </div>
+      </header>
+      <div class="text">Welcom to SeekPastHistory, your gateway to the past!</div>
+      <h4 class="desc" style = "margin-left: 20px;">We teach all kinds of history topics here. below are some of our topics:</h4>
   </section>
   <script>
-    let sidebar = document.querySelector(".sidebar");
-    let closeBtn = document.querySelector("#btn");
-    let searchBtn = document.querySelector(".bx-search");
+  let sidebar = document.querySelector(".sidebar");
+  let closeBtn = document.querySelector("#btn");
+  let searchBtn = document.querySelector(".bx-search");
 
-    closeBtn.addEventListener("click", () => {
-      sidebar.classList.toggle("open");
-      menuBtnChange();//calling the function(optional)
-    });
+  closeBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("open");
+    menuBtnChange();//calling the function(optional)
+  });
 
-    // following are the code to change sidebar button(optional)
-    function menuBtnChange() {
-      if (sidebar.classList.contains("open")) {
-        closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
-      } else {
-        closeBtn.classList.replace("bx-menu-alt-right", "bx-menu");//replacing the iocns class
-      }
-    }
+  // following are the code to change sidebar button(optional)
+  function menuBtnChange() {
+   if(sidebar.classList.contains("open")){
+     closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
+   }else { 
+     closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
+   }
+  }
   </script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <div class="back"></div>
 </body>
-
 </html>
+
