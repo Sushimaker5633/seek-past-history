@@ -240,6 +240,9 @@
   left: 250px;
   width: calc(100% - 250px);
 }
+html {
+  background: #E4E9F7;
+}
 .home-section .text{
   display: inline-block;
   color: #11101d;
@@ -272,3 +275,29 @@ header {
  h2 {
   text-decoration: overline;
  }
+
+.a {
+  margin: 35px;
+  text-decoration: none;
+  font-family: sans-serif;
+  border: solid;
+  border-color: #002e99;
+  padding: 12px;
+  border-radius: 14px;
+  background-color: #002e99;
+  color: azure;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.staff-head {
+  margin: 18px;
+  font-size: 26px;
+}
+.spacer {
+  height: 15px;
+}
+.text {
+  text-align: center;
+}
