@@ -301,3 +301,6 @@ header {
 .text {
   text-align: center;
 }
+iframe[seamless] {
+  border: none;
+}
