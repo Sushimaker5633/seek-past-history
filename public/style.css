@@ -304,3 +304,12 @@ header {
 iframe[seamless] {
   border: none;
 }
+.logo {
+  float: left;
+}
+.logo-text {
+  display: flex;
+flex-direction: row;
+align-items: center;
+  justify-content: center;
+}
